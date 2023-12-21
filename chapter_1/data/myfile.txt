@@ -1,0 +1,57 @@
+print("hello world")
+b = 3
+a <- b
+a = 4
+b = 3
+a <- b # b를 a에 할당
+a = b #b를 a에 할당(<- 연산자에 비해 우선순위에서 밀림)
+a <<- b #b를 a에 할당
+a -> b #a를 b에 할당
+a ->> b #a를 b에 할당
+a+b #a와 b를 더함
+a-b #a에서 b를 뺌
+a*b #a와 b를 곱함
+a/b #a를 b로 나눈 나눔
+a%%b #a를 b로 나눈 나머지
+a%/%b #a를 b로 나눈 몫
+a^b #a를 b번 곱함 (a의 b승)
+a = 4
+b = 3
+a <- b # b를 a에 할당
+a = b #b를 a에 할당(<- 연산자에 비해 우선순위에서 밀림)
+a <<- b #b를 a에 할당
+a -> b #a를 b에 할당
+a ->> b #a를 b에 할당
+a+b #a와 b를 더함
+a-b #a에서 b를 뺌
+a*b #a와 b를 곱함
+a/b #a를 b로 나눈 나눔
+a%%b #a를 b로 나눈 나머지
+a%/%b #a를 b로 나눈 몫
+a^b #a를 b번 곱함 (a의 b승)
+# 연속 숫자 벡터 3개 지정
+(a=1:10); (b = 1:5); (c=4:1)
+#a, b가 배수 관계이므로 더 짧은 b를 두번 사용하여 계산
+a+b
+#a,c가 배수 관계가 아니므로 경고 메시지가 출력됨(c는 2.5번 사용됨)
+a+c
+#3행, 4열의 행렬, 데이터가 열 우선으로 배정됨
+(x = matrix(1:12, 3, 4))
+#4행, 3열의 행렬, 데이터가 행 우선으로 배정됨
+(y = matrix(1:12, 4, 3, byrow=T))
+# a의 길이가 x의 전체 길이보다 짧으므로 1~10 이후 1, 2까지 반복됨
+a+x
+# x의 전체 길이가 c의 3 배이므로 3회 반복됨
+c+x
+# x와 y의 전체 길이는 같지만, 행렬의 차원이 다르므로 오류 발생
+x+y
+# x와 다른 차원(3행 4열)의 행렬 지정
+z=matrix(12:1, 3,4)
+# x와 z의 차원이 같으므로 연산이 수행됨
+x+z
+# 명령문 개수 제한(max.show=25) 없이 모두 표시
+history(max.show=Inf)
+savehistory(file="/home/dangmu/Rstudy/chapter_1/data/myfile.txt")
+# 명령문 개수 제한(max.show=25) 없이 모두 표시
+history(max.show=Inf)
+savehistory(file="/home/dangmu/Rstudy/chapter_1/data/myfile.txt")
